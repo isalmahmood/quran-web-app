@@ -1,0 +1,12 @@
+.body-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*untuk tiga column jika ingin tambah kolum hanya tambahkan 1fr*/
+    column-gap: 20px; /*untuk jarak kolom*/
+    row-gap: 20px; /*untuk jarak baris*/
+}
+
+.box {
+    min-height: 250px;
+    width: 100%;
+    font-size: 50px;
+}

@@ -1,0 +1,19 @@
+.shimmer__loading {
+    width: 100px;
+    height: 20px;
+    background: rgba(180, 178, 178, 0.363);
+    overflow: hidden;
+    text-align: center;
+  }
+  .placeholder{
+    box-shadow: 0 0px 40px 10px rgb(255, 255, 255);
+    position: relative;
+    /* margin-left: -100px; */
+    height: 0; 
+    width:10px;
+    animation: load 1s infinite;  
+  }
+  @keyframes load {
+    0%{ left: -30px}
+    100%{ left: 120px}
+}
