@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import LoadingAnimate from "../../../components/loading/LoadingAnimate";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { GlobalContext } from "../../../context/GlobalContext";
-import { ListAyat } from "../../../components/ListSurat";
+import { ListSurat } from "../../../components/ListSurat";
 import HeadNavbar from "../../../components/HeadNavbar";
 import HeroSection from "../../../components/HeroSection";
 
@@ -45,12 +45,14 @@ function HomePage() {
   console.log(selectTypeSurat);
   const [search, setSearch] = useState("");
 
+  // virtual scroller
+
   return (
     <>
       <HeadNavbar />
       <div className="flex flex-col container m-auto h-screen justify-between scroll-smooth">
         <header className="mt-16 drop-shadow-lg">
-          <HeroSection/ >
+          <HeroSection />
         </header>
 
         <div className="w-full">
@@ -81,8 +83,7 @@ function HomePage() {
                   >
                     {uniqueTypeSurat.map((option, index) => {
                       return (
-                        <option
-                        className="text-normal normal-case" key={index}>
+                        <option className="text-normal normal-case" key={index}>
                           {option.tempat_turun}
                         </option>
                       );
@@ -94,16 +95,10 @@ function HomePage() {
           </div>
         </div>
 
-        {/* {dataSurah === null ? (
-          <LoadingAnimate />
-        ) : (
-          <ListAyat dataSurah={dataSurah} handleView={handleView} />
-        )} */}
-
         {dataSurah === null ? (
           <LoadingAnimate />
         ) : (
-          <ListAyat
+          <ListSurat
             dataSurah={dataSurah}
             handleView={handleView}
             search={search}

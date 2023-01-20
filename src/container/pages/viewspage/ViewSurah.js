@@ -69,7 +69,6 @@ const ViewSurah = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    
   }, []);
 
   const convertNumbArabic = (numb) => {
@@ -78,10 +77,8 @@ const ViewSurah = () => {
 
   return (
     <>
-        
-          <HeadNavbar />
+      <HeadNavbar />
       <div className="container mx-auto flex flex-col h-screen justify-between">
-
         {/* <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-100 drop-shadow-lg">
           <div className="mt-5 border-double border-4 border-indigo-900 w-96 m-auto">
             <h1 className="text-4xl mt-2 text-center leading-4 text-grey-800 font-bold">
@@ -228,15 +225,15 @@ const ViewSurah = () => {
         </div>
 
         <div className="mt-5 w-96 m-auto text-indigo-900">
-            <h1 className="text-4xl mt-2 text-center leading-4 text-grey-800 font-bold">
-              {dataSurah?.nama ?? <LoadingAnimate />}
-              <div className="mt-3 font-semibold text-lg">
-                {dataSurah?.nama_latin || "undifined"}
-                <br/>
+          <h1 className="text-4xl mt-2 text-center leading-4 text-grey-800 font-bold">
+            {dataSurah?.nama ?? <LoadingAnimate />}
+            <div className="mt-3 font-semibold text-lg">
+              {dataSurah?.nama_latin || "undifined"}
+              <br />
               {dataSurah?.arti || "undifined"}
-              </div>
-            </h1>
-          </div>
+            </div>
+          </h1>
+        </div>
 
         <main className="p-5 mt-0">
           {ayats.map((res, index) => {
@@ -252,7 +249,7 @@ const ViewSurah = () => {
                 >
                   {res.ar}{" "}
                   <span className="rounded-full border-2 border-black p-2 text-2xl leading-normal">
-                  {convertNumbArabic(res.nomor)}
+                    {convertNumbArabic(res.nomor)}
                   </span>
                 </p>
                 <p className={`text-indigo-900 pt-2 font-semibold text-xl`}>

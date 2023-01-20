@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const HeadNavbar = () => {
+
+  const location = useLocation();
+   let path = location.pathname;
+   console.log(path)
+
+
   return (
     <>
       <nav className="fixed w-full z-50 ">
@@ -47,7 +53,8 @@ const HeadNavbar = () => {
                   >
                     <Link
                       to={"/"}
-                      className="bg-green-700 text-white mr-2 px-3 py-2 rounded-md text-sm font-medium"
+                      className={`bg-green-700 text-white mr-2 px-3 py-2 rounded-md text-sm font-medium
+                      ${path === '/' && 'hidden' }`}
                       aria-current="page"
                     >
                       Home

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import LoadingAnimate from "./loading/LoadingAnimate";
 
-export const ListAyat = (props) => {
+export const ListSurat = (props) => {
   let search = props.search;
   let selectTypeSurat = props.selectTypeSurat;
   let dataSurah = props.dataSurah;
 
+  if(selectTypeSurat === "Tidak difilter"){
+    selectTypeSurat = ""
+  }
+
   let setDataSurah = dataSurah.filter((res) => {
-    return search.toLowerCase() === "" && selectTypeSurat === "Tidak difilter"
+    return search.toLowerCase() === "" && selectTypeSurat === ""
       ? res
       : res.nama_latin.toLowerCase().includes(search.toLowerCase()) &&
           res.tempat_turun
