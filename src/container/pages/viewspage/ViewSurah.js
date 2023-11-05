@@ -235,7 +235,7 @@ const ViewSurah = () => {
           </h1>
         </div>
 
-        <main className="p-5 mt-0">
+        <main className="p-5 mt-0 font-lateef">
           {ayats.map((res, index) => {
             return (
               <div
@@ -247,7 +247,7 @@ const ViewSurah = () => {
                 <p
                   className={`font-semibold leading-loose text-4xl text-indigo-900 text-right`}
                 >
-                  {res.ar}{" "}
+                  <sapan>{res.ar}{" "}</sapan>
                   <span className="rounded-full border-2 border-black p-2 text-2xl leading-normal">
                     {convertNumbArabic(res.nomor)}
                   </span>

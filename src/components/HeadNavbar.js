@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import QuranIcon from '../assets/icons/quran-flaticon_by_BZZRINCANTATION.png'
 
 const HeadNavbar = () => {
 
@@ -17,28 +18,28 @@ const HeadNavbar = () => {
               {/* Mobile menu button*/}
               <button
                 type="button"
-                className="inline-flex text-white text-xl font-semibold items-center justify-center p-2 "
+                className="inline-flex text-white text-2xl font-bold items-center justify-center p-2 "
               >
-                Quran Lite App
+                Quran Web App
               </button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <img
                   className="block h-8 w-auto lg:hidden"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  src={QuranIcon}
                   alt="Your Company"
                 />
                 <img
                   className="hidden h-8 w-auto lg:block"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  src={QuranIcon}
                   alt="Your Company"
                 />
               </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden sm:ml-2 sm:block">
                 <div className="flex space-x-4">
-                  <span className="text-white px-3 py-2 text-xl font-bold">
-                    Quran Lite App
+                  <span className="text-white px-1 py-2 text-2xl font-bold ">
+                    Quran Web App
                   </span>
                 </div>
               </div>
@@ -53,7 +54,7 @@ const HeadNavbar = () => {
                   >
                     <Link
                       to={"/"}
-                      className={`bg-green-700 text-white mr-2 px-3 py-2 rounded-md text-sm font-medium
+                      className={`bg-transparent tracking-wider font-normal text-white text-base mr-2 px-3 py-1 rounded-md text-sm font-semibold border-b-4 border-green-700
                       ${path === '/' && 'hidden' }`}
                       aria-current="page"
                     >
@@ -61,7 +62,7 @@ const HeadNavbar = () => {
                     </Link>
                     <Link
                       to={"/"}
-                      className="bg-green-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className="bg-transparent tracking-wider font-normal text-white text-base px-3 py-1 rounded-md text-sm font-semibold border-b-4 border-green-700"
                       aria-current="page"
                     >
                       About

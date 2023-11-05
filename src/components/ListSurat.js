@@ -64,7 +64,7 @@ export const ListSurat = (props) => {
                           <button
                             onClick={props.handleView}
                             value={res.nomor}
-                            className="bg-indigo-900 px-5 py-1 rounded-lg text-base text-white font-semibold drop-shadow-lg block my-2 m-auto hover:scale-110"
+                            className="bg-indigo-800 w-1/2 px-5 py-1 rounded-lg text-base text-white font-semibold drop-shadow-lg block my-2 m-auto hover:scale-110"
                           >
                             View
                           </button>

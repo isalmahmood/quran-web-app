@@ -17,6 +17,7 @@ function HomePage() {
   const removeDuplicateTypeSurat = () => {
     let unique = [{ tempat_turun: "Tidak difilter" }];
     const tempatTurun = {};
+
     dataSurah.forEach((element) => {
       if (!tempatTurun[element.tempat_turun]) {
         tempatTurun[element.tempat_turun] = true;
@@ -96,12 +97,12 @@ function HomePage() {
                   <select
                     value={selectTypeSurat}
                     onChange={handleChangeTypeSurat}
-                    className="w-auto capitalize text-lg rounded bg-indigo-700
-                  border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500  px-4 py-2 dark:border-gray-600  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="w-auto capitalize text-lg rounded bg-indigo-500
+                  border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500  px-3 py-0 dark:border-gray-600  dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   >
                     {uniqueTypeSurat.map((option, index) => {
                       return (
-                        <option className="capitalize" key={index}>
+                        <option className="capitalize py-0" key={index}>
                           {option.tempat_turun}
                         </option>
                       );

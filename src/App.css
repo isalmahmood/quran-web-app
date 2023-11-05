@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font LPMQ Isep Misbah */
+-- :root {
+  --fontLPMQ : 
+}
+
+@font-face {
+  font-family: "Font LPMQ Isep Misbah";
+  src: url('assets/fonts/LPMQ-IsepMisbah.ttf');
+}
+
 .App {
   text-align: center;
 }
 
 body {
   background: rgb(246, 253, 255);
+  /* background-color: rgb(15 23 42); */
+  font-family: "Font LPMQ Isep Misbah";
 }
 
 

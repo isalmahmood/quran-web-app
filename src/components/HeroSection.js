@@ -10,7 +10,7 @@ const HeroSection = () => {
       >
         <div className="wallpaper w-full h-80 p-5 bg-black/50">
           <h1 className="text-3xl leading-4 text-slate-100 font-bold">
-            Quran Lite App
+            Quran Web App
           </h1>
         </div>
       </div>
