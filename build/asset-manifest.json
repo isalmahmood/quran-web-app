@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.307baf9d.css",
-    "main.js": "/static/js/main.af32d279.js",
-    "static/js/787.79736c21.chunk.js": "/static/js/787.79736c21.chunk.js",
-    "static/media/image-hero.jpg": "/static/media/image-hero.9bd6f0993c7bfce29c49.jpg",
-    "static/media/LPMQ-IsepMisbah.ttf": "/static/media/LPMQ-IsepMisbah.fe9979d34d3f0af9a14c.ttf",
-    "static/media/quran-flaticon_by_BZZRINCANTATION.png": "/static/media/quran-flaticon_by_BZZRINCANTATION.960441b9e8b2815d85c1.png",
-    "index.html": "/index.html",
-    "main.307baf9d.css.map": "/static/css/main.307baf9d.css.map",
-    "main.af32d279.js.map": "/static/js/main.af32d279.js.map",
-    "787.79736c21.chunk.js.map": "/static/js/787.79736c21.chunk.js.map"
+    "main.css": "/quran-web-app/static/css/main.a106504c.css",
+    "main.js": "/quran-web-app/static/js/main.cdfc9d3f.js",
+    "static/js/787.79736c21.chunk.js": "/quran-web-app/static/js/787.79736c21.chunk.js",
+    "static/media/image-hero.jpg": "/quran-web-app/static/media/image-hero.9bd6f0993c7bfce29c49.jpg",
+    "static/media/LPMQ-IsepMisbah.ttf": "/quran-web-app/static/media/LPMQ-IsepMisbah.fe9979d34d3f0af9a14c.ttf",
+    "static/media/quran-flaticon_by_BZZRINCANTATION.png": "/quran-web-app/static/media/quran-flaticon_by_BZZRINCANTATION.960441b9e8b2815d85c1.png",
+    "index.html": "/quran-web-app/index.html",
+    "main.a106504c.css.map": "/quran-web-app/static/css/main.a106504c.css.map",
+    "main.cdfc9d3f.js.map": "/quran-web-app/static/js/main.cdfc9d3f.js.map",
+    "787.79736c21.chunk.js.map": "/quran-web-app/static/js/787.79736c21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.307baf9d.css",
-    "static/js/main.af32d279.js"
+    "static/css/main.a106504c.css",
+    "static/js/main.cdfc9d3f.js"
   ]
 }
