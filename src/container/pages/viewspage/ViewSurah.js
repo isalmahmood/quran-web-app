@@ -264,11 +264,13 @@ const ViewSurah = () => {
               </div>
             );
           })}
+          <div className="mt-6">&nbsp;</div>
         </main>
 
-        <div className={`w-full bg-indigo-200`}>
+
+        <div className={`w-full bg-indigo-200 grid justify-items-center `}>
           <ReactAudioPlayer
-            className="w-full rounded-none h-20"
+            className="w-1/2 rounded-none h-20 fixed bottom-3"
             src={dataSurah.audio}
             controls
           />

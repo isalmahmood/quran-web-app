@@ -11,7 +11,7 @@ const HeadNavbar = () => {
   return (
     <>
       <nav className="fixed w-full z-50 ">
-        <div className="mx-auto px-2 container sm:px-6 lg:px-8 bg-gradient-to-r from-green-700 via-green-600 to-green-500 drop-shadow-lg">
+        <div className="mx-auto px-2 2xl:container sm:px-6 lg:px-8 bg-gradient-to-r from-green-700 via-green-600 to-green-500 drop-shadow-lg">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* Mobile menu button*/}

@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+body {
+  background: rgb(246, 253, 255);
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
